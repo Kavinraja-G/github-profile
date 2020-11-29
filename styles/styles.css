@@ -1,0 +1,136 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body {
+    /* Gradient from cssgradient */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: #757F9A;
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A); 
+    background: linear-gradient(to right, #D7DDE8, #757F9A); 
+}
+
+.card {
+    position: relative;
+    margin: auto;
+    margin-top: 40%;
+    border: 1px none black;
+    border-radius: 20px;
+    width: 450px;
+    height: 500px;
+    background-color: rgba(253, 253, 253, 0.705);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+    box-shadow: 0 6px 8px 0 rgb(100, 100, 100), 0 6px 20px 0  rgb(100, 100, 100);
+}
+
+.top-card {
+    background-color: #34626c;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 35%;
+}
+
+.pattern {
+    position: absolute;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 35%;
+    box-shadow: 0 6px 8px 0 gray;
+}
+
+.avatar {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 6px 8px 0 black, 0 6px 20px 0 gray;
+    height: 100px;
+    width: 100px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.bottom-card {
+    text-align: center;
+}
+
+hr {
+    background-color: #cfd3ce;
+    margin-top: 15%;
+    height: 1px;   
+    width: 90%;
+}
+
+.user-block {
+    margin-top: 15%;
+}
+
+.data-block {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 450px;
+    bottom: 5%;
+}
+
+.details {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.sub-details {
+    font-family: 'Exo', sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    color: grey; 
+}
+
+#search-field {
+    padding: 10px;
+    height: 40px;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    border: 1px none black;
+    border-radius: 20px;
+    outline: none;
+    border: 1px none grey;
+    float: left;
+    width: 380px;
+    background: #f1f1f1;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+/* Style the submit button */
+#search-button {
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 15px;
+    background: #3fa8ff;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#search-button:hover {
+    background: #033863;
+}
+
+.search-container {
+    position: absolute;
+    bottom: -15%;
+    height: 40px;
+}
